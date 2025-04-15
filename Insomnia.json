@@ -1,0 +1,348 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1742318418243
+  modified: 1742318418243
+collection:
+  - name: clientes
+    meta:
+      id: fld_321141929417466fb13ae63d20d40d4a
+      created: 1744737663344
+      modified: 1744737663344
+      sortKey: -1744737663344
+    children:
+      - name: cliente
+        meta:
+          id: req_2b53c13c10e84e03b7596f5a884784f4
+          created: 1744737681124
+          modified: 1744738760560
+          isPrivate: false
+          sortKey: -1744737681124
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/cliente
+        name: cliente
+        meta:
+          id: req_6348841ddf044c62b29c1f484ff4c1c1
+          created: 1744737692829
+          modified: 1744739116612
+          isPrivate: false
+          sortKey: -1744737692829
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |
+            [
+              { "nome": "Helio Alves", "telefone": "(11) 98888-8888" },
+              { "nome": "Lucas Silva", "telefone": "(11) 91234-5678" },
+              { "nome": "Maria Oliveira", "telefone": "(11) 91345-6789" },
+              { "nome": "João Santos", "telefone": "(11) 91987-6543" },
+              { "nome": "Ana Costa", "telefone": "(11) 93123-4567" },
+              { "nome": "Pedro Souza", "telefone": "(11) 93234-5678" },
+              { "nome": "Gabriela Lima", "telefone": "(11) 93345-6789" },
+              { "nome": "Carlos Pereira", "telefone": "(11) 93456-7890" },
+              { "nome": "Fernanda Rodrigues", "telefone": "(11) 93567-8901" },
+              { "nome": "Ricardo Almeida", "telefone": "(11) 93678-9012" },
+              { "nome": "Patrícia Fernandes", "telefone": "(11) 93789-0123" },
+              { "nome": "Juliana Gomes", "telefone": "(11) 93890-1234" },
+              { "nome": "Marcos Oliveira", "telefone": "(11) 93901-2345" },
+              { "nome": "Larissa Barbosa", "telefone": "(11) 95012-3456" },
+              { "nome": "Felipe Costa", "telefone": "(11) 95123-4567" },
+              { "nome": "Bruna Silva", "telefone": "(11) 95234-5678" },
+              { "nome": "André Souza", "telefone": "(11) 95345-6789" },
+              { "nome": "Paula Martins", "telefone": "(11) 95456-7890" },
+              { "nome": "Tiago Rocha", "telefone": "(11) 95567-8901" },
+              { "nome": "Jéssica Ferreira", "telefone": "(11) 95678-9012" }
+            ]
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/cliente
+        name: cliente
+        meta:
+          id: req_9c21033c0dd0420884a65991b97a932c
+          created: 1744737695933
+          modified: 1744738796223
+          isPrivate: false
+          sortKey: -1744737695933
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "pagina": 1,
+              "quantidade": 10
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/cliente
+        name: cliente
+        meta:
+          id: req_35329ea8cff34536aeb91a429e182226
+          created: 1744737699168
+          modified: 1744741016581
+          isPrivate: false
+          sortKey: -1744737699168
+        method: GET
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: telefone
+    meta:
+      id: fld_00249f61c63844a08b5be596a73e6e21
+      created: 1744737800350
+      modified: 1744737800350
+      sortKey: -1744737800350
+    children:
+      - name: telefone
+        meta:
+          id: req_9c165d3342b6457c933cf5516d0ae850
+          created: 1744737819628
+          modified: 1744738695710
+          isPrivate: false
+          sortKey: -1744737819628
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - name: telefone
+        meta:
+          id: req_c19bf4c3c1434aff96905776f74bbfb4
+          created: 1744737852333
+          modified: 1744740872751
+          isPrivate: false
+          sortKey: -1744737852334
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "cliente_id": 1,
+              "telefone": "(11) 98888-0001"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - name: telefone
+        meta:
+          id: req_40069e78595749c688f8966e8e3efc9d
+          created: 1744737870600
+          modified: 1744740890982
+          isPrivate: false
+          sortKey: -1744737870600
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "telefone": "(11) 97777-9999"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - name: telefone
+        meta:
+          id: req_17d2114395e246929344b68027a2e3f2
+          created: 1744737899222
+          modified: 1744738676010
+          isPrivate: false
+          sortKey: -1744737899222
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: pedidos
+    meta:
+      id: fld_187fe3f33b6d4ab89e5d1c173ae8aeb9
+      created: 1744737814225
+      modified: 1744737814225
+      sortKey: -1744737814225
+    children:
+      - name: pedidos
+        meta:
+          id: req_cd291091a14f43dca3251abd40cfe17a
+          created: 1744737922102
+          modified: 1744738745943
+          isPrivate: false
+          sortKey: -1744737922102
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - name: pedidos
+        meta:
+          id: req_f9a177573f024190a09ef8ca1824e598
+          created: 1744737941053
+          modified: 1744740951329
+          isPrivate: false
+          sortKey: -1744737941053
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "cliente_id": 1,
+              "produto": "X-Tudo",
+              "quantidade": 2,
+              "status": "pendente"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - name: pedidos
+        meta:
+          id: req_60281468bd7b4c2bb63ab1d7a7837955
+          created: 1744737956746
+          modified: 1744740963594
+          isPrivate: false
+          sortKey: -1744737956746
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "status": "concluído"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - name: pedidos
+        meta:
+          id: req_f071a39f31554f45b69263781e984f48
+          created: 1744737977661
+          modified: 1744738717465
+          isPrivate: false
+          sortKey: -1744737977661
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1742911178760
+    modified: 1742911178760
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1742911178696
+    modified: 1742911178696
+    isPrivate: false
